@@ -1,35 +1,26 @@
-const app = new UIApp({
+const counter = new UIApp({
   root: "#root",
   data: {
     count: 0,
   },
   view: ({ TextView, Stack, Button, Spacer }: UIElements) => {
-    const { data, changeData } = app;
+    const { data, changeData } = counter;
 
-    Stack("column", {
-      value: [
-        TextView(data.count, {
-          classes: "font-semibold text-3xl mb-4 text-center",
-        }),
-        TextView(`the value is ${data.count}`),
-      ],
-      classes: "items-center",
-    });
+    TextView(data.count, { classes: "text-center font-bold text-3xl" });
     Stack("row", {
       value: [
-        Button("Increment", {
+        Button("Increment (+)", {
           onclick: () => changeData({ count: data.count + 1 }),
-          classes: "rounded-sm shadow bg-red-500 p-2 text-white",
         }),
-        Button("Decrement", {
+
+        Button("Decrement (-)", {
           onclick: () => changeData({ count: data.count - 1 }),
-          classes: "rounded-sm shadow bg-red-500 p-2 text-white",
         }),
       ],
-      classes: "justify-between",
+      classes: "justify-evenly",
     });
     Spacer();
   },
 });
 
-app.render();
+counter.render();

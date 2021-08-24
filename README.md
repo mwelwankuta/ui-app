@@ -1,6 +1,6 @@
 # UI Framework
 
-a javascript ui framwork
+a javascript ui framework
 
 ## Creating a counter
 
