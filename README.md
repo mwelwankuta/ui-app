@@ -41,3 +41,15 @@ const app = new UIApp({
 
 app.render();
 ```
+
+
+## 🎩 Project Description
+This project aims to use HTML and JavaScript in such a way that it takes aways manuel interaction with the dom
+
+### 👉 Technologies Used :
+ * TypeScript
+ * TailwindCSS
+
+<a id="bug"></a>
+## 🐛 Bugs Reporting
+Feel free to [open an issue](https://github.com/mwelwankuta/ui-app/issues) on GitHub if you find any bug.
