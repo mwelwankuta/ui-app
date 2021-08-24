@@ -1,0 +1,17 @@
+{
+  "name": "AppUI",
+  "version": "1.0.0",
+  "description": "a javascript library for writing user interfaces :)",
+  "scripts": {
+    "start": "tsc -w"
+  },
+  "keywords": [
+    "typescript",
+    "javascript",
+    "html",
+    "ui"
+  ],
+  "author": "Mwelwa Nkuta",
+  "license": "MIT",
+  "main": "index.js"
+}
