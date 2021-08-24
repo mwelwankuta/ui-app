@@ -10,7 +10,7 @@ const app = new UIApp({
   data: {
     count: 0,
   },
-  view: ({ TextView, Stack, Button }: UIElements) => {
+  view: ({ TextView, Stack, Button }) => {
     const { data, changeData } = app;
 
     TextView(data.count);
